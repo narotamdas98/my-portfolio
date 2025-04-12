@@ -12,7 +12,7 @@ function App() {
     <div className="bg-gray-100 text-gray-800">
       <Navbar />
       <div id="home"><Hero /></div>
-      <div id="about"><About /></div>
+      <div id="abouts"><About /></div>
       {/* <Hero />
       <About />
       <Experience />
