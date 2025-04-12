@@ -19,7 +19,7 @@ const Navbar = () => {
       <div className="flex justify-between items-center max-w-7xl mx-auto px-6 py-4">
         {/* Logo */}
         <a href="#home" className="text-2xl font-bold text-blue-900">
-          Narotam
+          Narotam Das
         </a>
 
         {/* Desktop Nav */}
