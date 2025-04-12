@@ -7,19 +7,23 @@ import Contact from "@components/Contact";
 import Footer from "@components/Footer";
 
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 function App() {
   return (
-    <div className="bg-gray-100 text-gray-800">
+    <>
       <Analytics />
-      <Navbar />
-      <Hero />
-      <About />
-      <Experience />
-      <Projects />
-      <Contact />
-      <Footer />
-    </div>
+      <SpeedInsights />
+      <div className="bg-gray-100 text-gray-800">
+        <Navbar />
+        <Hero />
+        <About />
+        <Experience />
+        <Projects />
+        <Contact />
+        <Footer />
+      </div>
+    </>
   );
 }
 
