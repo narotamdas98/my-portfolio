@@ -46,10 +46,13 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 px-6 bg-white">
+    <section
+      id="about"
+      className="py-20 px-6 bg-gradient-to-r from-blue-50 to-gray-100"
+    >
       <div className="max-w-4xl mx-auto text-center">
         <motion.h2
-          className="text-3xl md:text-4xl font-bold text-blue-900 mb-6"
+          className="text-3xl md:text-4xl font-extrabold text-blue-900 mb-6"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -58,7 +61,7 @@ const About = () => {
         </motion.h2>
 
         <motion.p
-          className="text-lg text-gray-700 leading-relaxed"
+          className="text-lg md:text-xl text-gray-700 leading-relaxed mb-8"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.6 }}
@@ -78,7 +81,7 @@ const About = () => {
           {techStack.map(({ name, icon }) => (
             <div
               key={name}
-              className="flex flex-col items-center space-y-2 bg-blue-50 px-4 py-3 rounded shadow-sm hover:shadow-md hover:bg-blue-200 transition duration-200"
+              className="flex flex-col items-center space-y-2 bg-blue-50 px-4 py-3 rounded-lg shadow-lg hover:shadow-2xl hover:bg-blue-100 transition duration-300 ease-in-out transform hover:scale-105"
             >
               <div className="text-3xl">{icon}</div>
               <div className="text-sm font-medium text-gray-800">{name}</div>

@@ -15,11 +15,16 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="fixed w-full z-50 bg-white shadow-md">
+    <header className="fixed w-full z-50 bg-white shadow-md text-text">
       <div className="flex justify-between items-center max-w-7xl mx-auto px-6 py-4">
         {/* Logo */}
-        <a href="#home" className="text-2xl font-bold text-blue-900">
-          Narotam Das
+        <a
+          href="#home"
+          className="flex items-center gap-2 text-primary hover:opacity-90 transition"
+        >
+          <span className="text-xl font-bold bg-primary text-white px-3 py-1 rounded-full shadow-md">
+            ND
+          </span>
         </a>
 
         {/* Desktop Nav */}
@@ -28,16 +33,20 @@ const Navbar = () => {
             <li key={link.id}>
               <a
                 href={link.to}
-                className="text-gray-700 hover:text-blue-600 transition-colors duration-200"
+                className="relative text-text hover:text-hover transition duration-300 group font-medium"
               >
                 {link.name}
+                <span className="block h-0.5 bg-hover scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
               </a>
             </li>
           ))}
         </ul>
 
         {/* Hamburger Icon */}
-        <div className="md:hidden z-10" onClick={() => setNav(!nav)}>
+        <div
+          className="md:hidden z-10 cursor-pointer"
+          onClick={() => setNav(!nav)}
+        >
           {nav ? <FaTimes size={20} /> : <FaBars size={20} />}
         </div>
       </div>
@@ -53,7 +62,7 @@ const Navbar = () => {
             <li key={link.id}>
               <a
                 href={link.to}
-                className="text-gray-700 text-lg hover:text-blue-600"
+                className="text-lg text-text hover:text-hover transition duration-300"
                 onClick={() => setNav(false)}
               >
                 {link.name}
@@ -62,7 +71,7 @@ const Navbar = () => {
           ))}
         </motion.ul>
       )}
-    </div>
+    </header>
   );
 };
 

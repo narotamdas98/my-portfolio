@@ -51,7 +51,7 @@ const Experience = () => {
     <section id="experience" className="bg-gray-50 py-20 px-6">
       <div className="max-w-5xl mx-auto">
         <motion.h2
-          className="text-3xl md:text-4xl font-bold text-blue-900 mb-10 text-center"
+          className="text-3xl md:text-4xl font-bold text-blue-900 mb-12 text-center"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -59,18 +59,18 @@ const Experience = () => {
           Experience
         </motion.h2>
 
-        <div className="space-y-8">
+        <div className="space-y-12">
           {experiences.map((exp, idx) => (
             <motion.div
               key={idx}
-              className="bg-white p-6 rounded-lg shadow hover:shadow-md transition"
+              className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: idx * 0.1, duration: 0.5 }}
+              transition={{ delay: idx * 0.2, duration: 0.6 }}
             >
-              <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
+              <div className="flex flex-col md:flex-row justify-between items-start md:items-center space-y-4 md:space-y-0">
                 <div>
-                  <h3 className="text-xl font-semibold text-blue-800">
+                  <h3 className="text-xl font-semibold text-blue-800 leading-tight">
                     {exp.title} @ {exp.company}
                   </h3>
                   <p className="text-gray-600">{exp.location}</p>
@@ -79,7 +79,8 @@ const Experience = () => {
                   {exp.duration}
                 </span>
               </div>
-              <ul className="mt-4 list-disc list-inside space-y-1 text-gray-700 text-sm">
+
+              <ul className="mt-6 list-disc list-inside space-y-2 text-gray-700 text-sm">
                 {exp.bullets.map((bullet, i) => (
                   <li key={i}>{bullet}</li>
                 ))}
