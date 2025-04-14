@@ -56,7 +56,7 @@ const Navbar = () => {
         <motion.ul
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="absolute top-16 left-0 w-full bg-white flex flex-col items-center py-4 space-y-4 shadow-lg md:hidden"
+          className="absolute top-20 left-0 w-full bg-white flex flex-col items-center py-4 space-y-4 shadow-lg md:hidden"
         >
           {links.map((link) => (
             <li key={link.id}>
