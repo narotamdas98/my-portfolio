@@ -15,7 +15,7 @@ export const ProjectCard = ({ title, image, onClick }: ProjectCardProps) => {
     >
       <img src={image} alt={title} className="w-full h-48 object-cover" />
       <div className="p-4">
-        <h3 className="text-xl font-semibold text-blue-800">{title}</h3>
+        <h3 className="text-xl font-semibold text-primary">{title}</h3>
       </div>
     </motion.div>
   );

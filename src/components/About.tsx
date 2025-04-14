@@ -19,13 +19,15 @@ import {
   SiTailwindcss,
   SiHtml5,
   SiCss3,
+  SiNestjs,
 } from "react-icons/si";
 
 const About = () => {
   const techStack = [
-    { name: "React", icon: <SiReact className="text-blue-500" /> },
+    { name: "React", icon: <SiReact className="text-[#5bc2da]" /> },
     { name: "Next.js", icon: <SiNextdotjs className="text-black" /> },
     { name: "Node.js", icon: <SiNodedotjs className="text-green-600" /> },
+    { name: "NestJS", icon: <SiNestjs className="text-[#ea2b58]" /> },
     { name: "Redux", icon: <SiRedux className="text-purple-600" /> },
     { name: "TypeScript", icon: <SiTypescript className="text-blue-700" /> },
     { name: "JavaScript", icon: <SiJavascript className="text-yellow-400" /> },
@@ -39,7 +41,6 @@ const About = () => {
     { name: "PostgreSQL", icon: <SiPostgresql className="text-blue-600" /> },
     { name: "GitHub", icon: <SiGithub className="text-black" /> },
     { name: "AWS", icon: <SiAmazon className="text-orange-400" /> },
-    // { name: "Material UI", icon: <SiMaterialui className="text-blue-500" /> },
     { name: "Tailwind CSS", icon: <SiTailwindcss className="text-teal-500" /> },
     { name: "HTML", icon: <SiHtml5 className="text-orange-600" /> },
     { name: "CSS", icon: <SiCss3 className="text-blue-600" /> },
@@ -48,11 +49,11 @@ const About = () => {
   return (
     <section
       id="about"
-      className="py-20 px-6 bg-gradient-to-r from-blue-50 to-gray-100"
+      className="py-20 px-6 bg-gradient-to-r from-white to-bg"
     >
       <div className="max-w-4xl mx-auto text-center">
         <motion.h2
-          className="text-3xl md:text-4xl font-extrabold text-blue-900 mb-6"
+          className="text-3xl md:text-4xl font-extrabold text-text mb-6"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -61,19 +62,34 @@ const About = () => {
         </motion.h2>
 
         <motion.p
-          className="text-lg md:text-xl text-gray-700 leading-relaxed mb-8"
+          className="text-lg md:text-xl text-muted leading-relaxed mb-8"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.6 }}
         >
-          I'm a Full Stack Developer with hands-on experience building scalable
-          applications using modern technologies like React, Next.js, Node.js,
-          and GCP. I specialize in crafting efficient backends and responsive
-          frontends, and I enjoy solving real-world problems with clean code.
+          I’m a passionate{" "}
+          <span className="text-primary font-semibold">
+            Full Stack Software Engineer
+          </span>{" "}
+          focused on building fast, scalable, and user-centric web applications.
+          With a strong foundation in both frontend and backend technologies, I
+          thrive in architecting systems that are robust, maintainable, and
+          performant.
+        </motion.p>
+
+        <motion.p
+          className="text-base text-muted mb-10"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.3, duration: 0.6 }}
+        >
+          I’ve worked with a wide range of modern tools and frameworks—from
+          React and TypeScript to NestJS and GCP—bringing real-world projects to
+          life with clean, efficient code.
         </motion.p>
 
         <motion.div
-          className="mt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6"
+          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.4, duration: 0.6 }}
@@ -81,10 +97,10 @@ const About = () => {
           {techStack.map(({ name, icon }) => (
             <div
               key={name}
-              className="flex flex-col items-center space-y-2 bg-blue-50 px-4 py-3 rounded-lg shadow-lg hover:shadow-2xl hover:bg-blue-100 transition duration-300 ease-in-out transform hover:scale-105"
+              className="flex flex-col items-center space-y-2 bg-white px-4 py-3 rounded-xl shadow-soft hover:shadow-lg hover:bg-blue-50 transition duration-300 ease-in-out transform hover:scale-105"
             >
               <div className="text-3xl">{icon}</div>
-              <div className="text-sm font-medium text-gray-800">{name}</div>
+              <div className="text-sm font-medium text-text">{name}</div>
             </div>
           ))}
         </motion.div>

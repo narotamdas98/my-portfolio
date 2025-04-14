@@ -20,9 +20,9 @@ const Navbar = () => {
         {/* Logo */}
         <a
           href="#home"
-          className="flex items-center gap-2 text-primary hover:opacity-90 transition"
+          className="flex items-center gap-2 text-text hover:opacity-90 transition"
         >
-          <span className="text-xl font-bold bg-primary text-white px-3 py-1 rounded-full shadow-md">
+          <span className="text-xl font-bold bg-text text-white px-3 py-3 rounded-full shadow-md">
             ND
           </span>
         </a>

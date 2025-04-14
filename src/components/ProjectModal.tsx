@@ -82,7 +82,7 @@ export const ProjectModal = ({
           </button>
 
           {/* Title */}
-          <h2 className="mb-4 text-2xl font-bold text-blue-800">
+          <h2 className="mb-4 text-2xl font-bold text-primary">
             {project.title}
           </h2>
 

@@ -7,9 +7,9 @@ const experiences = [
     title: "Software Engineer",
     duration: "Jul 2023 – Present",
     bullets: [
-      "Transformed a monolithic app into a scalable multi-tenant SaaS platform.",
-      "Integrated Stripe for subscription billing.",
-      "Built real-time support chat using Socket.io and Slack API.",
+      "Migrated a monolithic app to a scalable multi-tenant SaaS platform, improving maintainability and onboarding efficiency.",
+      "Integrated Stripe to automate recurring billing and invoice management for customers.",
+      "Developed a real-time support chat using Socket.io and Slack API, significantly improving customer engagement and support responsiveness.",
     ],
   },
   {
@@ -18,9 +18,9 @@ const experiences = [
     title: "Full Stack Developer",
     duration: "Nov 2022 – Jul 2023",
     bullets: [
-      "Optimized frontend using Next.js and TailwindCSS.",
-      "Converted Figma designs into interactive UI.",
-      "Developed full-stack features using AWS Amplify.",
+      "Built optimized UIs using Next.js and TailwindCSS, resulting in noticeably faster page loads and a smoother user experience.",
+      "Converted Figma designs into pixel-perfect, interactive interfaces.",
+      "Developed and deployed serverless features with AWS Amplify, enabling faster feature rollouts.",
     ],
   },
   {
@@ -29,9 +29,9 @@ const experiences = [
     title: "Full Stack Developer",
     duration: "Feb 2022 – Nov 2022",
     bullets: [
-      "Created employee management portal for admin tasks.",
-      "Implemented RBAC in React for secure data access.",
-      "Used Node.js + MongoDB for API development.",
+      "Built a robust employee management portal to streamline HR and admin operations",
+      "Implemented role-based access control (RBAC) in React to enforce granular permissions.",
+      "Designed RESTful APIs using Node.js + MongoDB to support seamless frontend-backend communication.",
     ],
   },
   {
@@ -40,8 +40,8 @@ const experiences = [
     title: "Full Stack Developer",
     duration: "Jun 2021 – Feb 2022",
     bullets: [
-      "Revamped frontend with React, TypeScript, React Query.",
-      "Integrated real-time chat with sockets for support team.",
+      "Modernized frontend using React, TypeScript, and React Query, improving code readability and maintainability.",
+      "Built real-time support chat with WebSockets, reducing average customer wait time.",
     ],
   },
 ];
@@ -51,7 +51,7 @@ const Experience = () => {
     <section id="experience" className="bg-gray-50 py-20 px-6">
       <div className="max-w-5xl mx-auto">
         <motion.h2
-          className="text-3xl md:text-4xl font-bold text-blue-900 mb-12 text-center"
+          className="text-3xl md:text-4xl font-bold text-primary mb-12 text-center"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -70,7 +70,7 @@ const Experience = () => {
             >
               <div className="flex flex-col md:flex-row justify-between items-start md:items-center space-y-4 md:space-y-0">
                 <div>
-                  <h3 className="text-xl font-semibold text-blue-800 leading-tight">
+                  <h3 className="text-xl font-semibold text-primary leading-tight">
                     {exp.title} @ {exp.company}
                   </h3>
                   <p className="text-gray-600">{exp.location}</p>

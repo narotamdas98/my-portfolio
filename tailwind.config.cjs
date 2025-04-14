@@ -4,13 +4,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#2563EB",   // Deep blue/navy
+        primary: "#1a8ef9",   // Deep blue/navy
         "primary-dark": "#1E40AF",  // blue-800
         accent: "#F97316",          // orange-500
         bg: "#F9FAFB",        // Light gray
         text: "#1F2937",      // Almost-black
         muted: "#94A3B8",     // Gray-blue
-        hover: "#1D4ED8",     // Blue hover effect
+        hover: "#3ab8ff",     // Blue hover effect
       },
 
       fontFamily: {

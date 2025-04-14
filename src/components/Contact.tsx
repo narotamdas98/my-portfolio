@@ -41,7 +41,7 @@ const Contact = () => {
       <ToastContainer position="top-right" autoClose={3000} />
       <div className="max-w-4xl mx-auto">
         <motion.h2
-          className="text-3xl md:text-4xl font-bold text-blue-900 text-center mb-10"
+          className="text-3xl md:text-4xl font-bold text-primary text-center mb-10"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -93,7 +93,7 @@ const Contact = () => {
             </div>
             <button
               type="submit"
-              className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition disabled:opacity-50"
+              className="bg-primary text-white px-4 py-2 rounded hover:bg-hover transition disabled:opacity-50"
               disabled={isLoading}
             >
               {isLoading ? "Sending..." : "Send Message"}

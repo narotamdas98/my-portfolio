@@ -12,7 +12,7 @@ const DownArrowButton = ({ nextSection }: { nextSection: string }) => {
     <div className="flex justify-center mt-6">
       <button
         onClick={handleClick}
-        className="text-blue-600 hover:text-blue-800 transition duration-300"
+        className="text-primary hover:text-hover transition duration-300"
       >
         <FaArrowDown size={30} />
       </button>
