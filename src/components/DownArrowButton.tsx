@@ -1,4 +1,6 @@
-import { FaArrowDown } from "react-icons/fa";
+import { IoIosArrowRoundDown } from "react-icons/io";
+
+import { motion } from "framer-motion";
 
 const DownArrowButton = ({ nextSection }: { nextSection: string }) => {
   const handleClick = () => {
@@ -9,13 +11,15 @@ const DownArrowButton = ({ nextSection }: { nextSection: string }) => {
   };
 
   return (
-    <div className="flex justify-center mt-6">
-      <button
+    <div className="flex justify-center mt-12 md:mt-0">
+      <motion.button
         onClick={handleClick}
-        className="text-primary hover:text-hover transition duration-300"
+        className="text-primary hover:text-hover"
+        animate={{ y: [0, 8, 0] }}
+        transition={{ duration: 1.5, repeat: Infinity }}
       >
-        <FaArrowDown size={30} />
-      </button>
+        <IoIosArrowRoundDown size={54} className="stroke-[1.5]" />
+      </motion.button>
     </div>
   );
 };

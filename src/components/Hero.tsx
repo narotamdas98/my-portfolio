@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-screen bg-gradient-to-b from-white to-bg flex items-center justify-center px-4"
+      className="min-h-screen bg-gradient-to-br from-white via-[#f0f4ff] to-[#e0f2fe] flex items-center justify-center px-4"
     >
       <div className="max-w-7xl w-full flex flex-col md:flex-row items-center justify-between gap-10">
         {/* Text Content */}
@@ -16,7 +16,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            Hi, I'm <span className="text-text">Narotam Das</span> 👋
+            Hi, I'm <span className="text-primary">Narotam Das</span> 👋
           </motion.h1>
 
           <motion.p
