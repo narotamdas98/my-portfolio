@@ -48,12 +48,24 @@ export const ProjectModal = ({
     return () => document.removeEventListener("keydown", handleKey);
   }, [onClose, prev, next]);
 
+  // useEffect(() => {
+  //   const timer = setInterval(() => {
+  //     next();
+  //   }, 5000);
+  //   return () => clearInterval(timer);
+  // }, [next]);
+
   useEffect(() => {
-    const timer = setInterval(() => {
-      next();
-    }, 5000);
-    return () => clearInterval(timer);
-  }, [next]);
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isOpen]);
 
   if (!isOpen || !project) return null;
 
