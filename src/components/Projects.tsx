@@ -26,7 +26,7 @@ const projectData: Project[] = [
       "/images/harbournest/image4.png",
       "/images/harbournest/image5.png",
     ],
-    tech: ["reactjs", "Nestjs", "MySQL", "Stripe", "GCP"],
+    tech: ["Reactjs", "Nestjs", "MySQL", "Stripe", "GCP"],
     bullets: [
       "Developed a full-featured property management system with task scheduling and user dashboards using React (Vite) and Tailwind CSS, powered by a robust NestJS backend on GCP.",
       "Integrated Google OAuth for seamless authentication and enabled Stripe-based payments to support a subscription model.",
@@ -44,13 +44,21 @@ const projectData: Project[] = [
       "/images/thethread/image3.png",
       "/images/thethread/image4.png",
     ],
-    tech: ["Nestjs", "GraphQL", "MySQL", "Stripe", "Socket.IO", "GCP"],
+    tech: [
+      "Nextjs",
+      "GraphQL",
+      "MySQL",
+      "Stripe",
+      "Socket.IO",
+      "GCP",
+      "Google Calendar",
+    ],
     bullets: [
       "Implemented the transformation of a single-vendor application into a scalable SaaS-based platform, accommodating multiple organizations. Established an efficient backend to seamlessly serve the frontend.",
       "Integrated Stripe's subscription-based payment module to enable clients to subscribe to and upgrade paid features within the web app.",
       "Implemented a real-time chat support system using Socket.io and Slack APIs to facilitate seamless communication between users and support teams.",
     ],
-    codeLink: "the-thread.co",
+    liveLink: "the-thread.co",
   },
   {
     title: "Wedding Day Timeline",
@@ -63,13 +71,13 @@ const projectData: Project[] = [
       "/images/weddingdaytimeline/image3.png",
       "/images/weddingdaytimeline/image4.png",
     ],
-    tech: ["Nestjs", "Nodejs", "AWS", "PostgreSQL", "Stripe"],
+    tech: ["Nextjs", "Nodejs", "AWS", "PostgreSQL", "Stripe"],
     bullets: [
       "Built a model that automatically calculates the baby’s age during pregnancy by analyzing ultrasound videos — no manual work needed.",
       "Unlike past work that used still images, our system works on full videos in real time, making it more accurate and reliable.",
       "Designed to be easily integrated into websites or apps — faster, cheaper, and more accurate than manual ultrasound analysis.",
     ],
-    codeLink: "weddingdaytimeline.com",
+    liveLink: "weddingdaytimeline.com",
   },
   {
     title: "Fetusound",
