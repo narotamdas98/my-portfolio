@@ -39,12 +39,12 @@ const Hero = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6, duration: 0.6 }}
           >
-            <a
+            {/* <a
               href="#projects"
               className="bg-primary text-white px-6 py-3 rounded-full font-medium shadow-soft hover:-translate-y-1 hover:shadow-lg transition-transform duration-300"
             >
               View Projects
-            </a>
+            </a> */}
             <a
               href="/NarotamDasResume.pdf"
               target="_blank"
